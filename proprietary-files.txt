@@ -3,7 +3,6 @@ bin/akmd8975
 bin/at_distributor
 bin/bcm4330.hcd
 bin/bcm_dut
-bin/bluetoothd
 bin/btld
 bin/calibration_init
 bin/connfwexe
@@ -22,6 +21,7 @@ bin/immvibed
 bin/kiesexe
 bin/LE_dut
 bin/lpmkey
+bin/macloader
 bin/mfgloader
 bin/mfserial
 bin/modemd
@@ -129,8 +129,6 @@ lib/libatparser.so
 lib/libaudiopolicy_sec.so
 lib/libaudio-ril.so
 lib/libaudiosa.so
-lib/libbluetoothd.so
-lib/libbluetooth.so
 lib/libbt-aptx-4.0.3.so
 lib/libbtio.so
 lib/libcontrolcsc.so

@@ -18,9 +18,6 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 LOCAL_PATH := device/samsung/logan2g
 
-$(shell mkdir -p $(LOCAL_PATH)/../../../out/target/product/logan2g/recovery/root/system/bin)
-$(shell ln -sf -t $(LOCAL_PATH)/../../../out/target/product/logan2g/recovery/root/system/bin ../../sbin/sh)
-
 # Files
 # Init
 PRODUCT_COPY_FILES += \

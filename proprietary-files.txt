@@ -1,8 +1,10 @@
 # bin
 bin/akmd8975
 bin/at_distributor
+bin/atrace
 bin/bcm4330.hcd
 bin/bcm_dut
+bin/bmgr
 bin/btld
 bin/calibration_init
 bin/connfwexe
@@ -133,15 +135,21 @@ lib/libbt-aptx-4.0.3.so
 lib/libbtio.so
 lib/libcontrolcsc.so
 lib/libcordon.so
+lib/libcutils.so
 lib/libdprw.so
 lib/libdrmdecrypt.so
 lib/libdwp.so
+lib/libEGL.so
+lib/libETC1.so
 lib/libengclient.so
 lib/libeng_wifi_ptest.so
 lib/libexifa.so
 lib/libfactoryutil.so
 lib/libfmradio_jni.so
 lib/libfmservice.so
+lib/libGLES_trace.so
+lib/libGLESv1_CM.so
+lib/libGLESv2.so
 lib/libImmVibeJ.so
 lib/libisp.so
 lib/libjpega.so
@@ -160,6 +168,8 @@ lib/libomx_m4vdec_sharedlibrary.so
 lib/libomx_m4venc_sharedlibrary.so
 lib/libomx_sharedlibrary.so
 lib/libopencore_common.so
+lib/libOpenMAXAL.so
+lib/libOpenSLES.so
 lib/libPanoraMax3.so
 lib/libpatts_engine_jni_api.so
 lib/libplayready.so
@@ -201,6 +211,7 @@ lib/libsec_km.so
 lib/libsecmediarecorder_jni.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
+lib/libsonivox.so
 lib/libsoundalive.so
 lib/lib_SoundAlive_V01013p.so
 lib/libSoundAlive_VSP_ver312a.so
@@ -210,6 +221,7 @@ lib/libstagefrighthw.so
 lib/libstagefright_soft_h264dec_sprd.so
 lib/libstagefright_soft_mpeg4dec_sprd.so
 lib/libUMP.so
+lib/libusbhost.so
 lib/libvbeffect.so
 lib/libvbpga.so
 lib/libvcdecoder_jni.so

@@ -13,8 +13,11 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/logan2g/overlay
 # Use high-density artwork where available; our device (GT-S7262) supports hdpi (high) ~240dpi.
 # However the platform doesn't currently contain all of the bitmaps at hdpi density.
 # So we do this little trick to fall back to the mdpi version if the hdpi doesn't exist.
-PRODUCT_AAPT_CONFIG := normal mdpi hdpi
+PRODUCT_AAPT_CONFIG := normal mdpi hdpi xhdpi nodpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_LOCALES += hdpi
+
+MALI := libUMP.so libEGL_mali.so libGLESv1_CM_mali.so libGLESv2_mali.so libMali.so ump.ko mali.ko
 
 LOCAL_PATH := device/samsung/logan2g
 
@@ -85,7 +88,21 @@ PRODUCT_COPY_FILES += \
 # Filesystem
 PRODUCT_PACKAGES += \
     make_ext4fs \
-    setup_fs
+    setup_fs \
+    mplayer \
+    e2fsck \
+    tinymix \
+    calibration_init \
+    modemd
+
+# Platform
+PRODUCT_PACKAGES += \
+    gralloc.sc6820i \
+    hwcomposer.sc6820i \
+    camera.sc6820i \
+    lights.sc6820i \
+    sensors.sc6820i \
+    $(MALI)
 
 # Usb Accessory
 PRODUCT_PACKAGES += \
@@ -112,7 +129,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.allow.mock.location=0 \
-    ro.debuggable=1 \
+    ro.debuggable=0 \
     persist.sys.usb.config=mtp,acm
 
 # These are the hardware-specific settings that are stored in system properties.

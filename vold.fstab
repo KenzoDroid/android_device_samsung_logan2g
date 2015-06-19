@@ -10,3 +10,10 @@
 
 # Mounts the first usable partition of the specified device
 dev_mount sdcard /storage/extSdCard auto /devices/platform/sprd-sdhci.0/mmc_host/mmc1
+dev_mount sda /storage/UsbDriveA auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+dev_mount sdb /storage/UsbDriveB auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+dev_mount sdc /storage/UsbDriveC auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+dev_mount sdd /storage/UsbDriveD auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+dev_mount sde /storage/UsbDriveE auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+dev_mount sdf /storage/UsbDriveF auto /devices/platform/omap/musb-omap2430/musb-hdrc/usb1
+#EOF

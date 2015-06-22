@@ -24,7 +24,6 @@ LOCAL_PATH := device/samsung/logan2g
 # Files
 # Init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
     $(LOCAL_PATH)/rootdir/init.sc6820i.rc:root/init.sc6820i.rc \
     $(LOCAL_PATH)/rootdir/init.sc6820i.usb.rc:root/init.sc6820i.usb.rc \
     $(LOCAL_PATH)/rootdir/init.bt.rc:root/init.bt.rc \
@@ -34,8 +33,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/charge:root/bin/charge \
     $(LOCAL_PATH)/rootdir/bin/poweroff_alarm:root/bin/poweroff_alarm \
     $(LOCAL_PATH)/rootdir/bin/rawdatad:root/bin/rawdatad \
-    $(LOCAL_PATH)/rootdir/sbin/ffu:root/sbin/ffu \
-    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+    $(LOCAL_PATH)/rootdir/sbin/ffu:root/sbin/ffu
+
+# TWRP
+# PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Vold
 PRODUCT_COPY_FILES += \

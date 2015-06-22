@@ -35,7 +35,8 @@ on post-fs
     # For SysScope
     symlink /dev/block/mmcblk0p4 /dev/block/param
     # ko files for exfat
-    insmod /system/lib/modules/exfat.ko
+    insmod /system/lib/modules/exfat_core.ko
+    insmod /system/lib/modules/exfat_fs.ko
     
 on post-fs-data
     # we will remap this as /storage/sdcard0 with the sdcard fuse tool
